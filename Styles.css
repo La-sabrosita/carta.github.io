@@ -212,7 +212,6 @@ footer {
 
 .phone-link,
 .whatsapp-link {
-  color: #b8965a;
   text-decoration: none;
   transition: all 0.3s ease;
   display: inline-flex;
@@ -224,14 +223,26 @@ footer {
   padding: 0;
 }
 
-.phone-link:hover,
-.whatsapp-link:hover {
+.phone-link {
+  color: #b8965a;
+}
+
+.phone-link:hover {
   color: #e8d7b7;
   text-decoration: underline;
 }
 
+.whatsapp-link {
+  color: #0084FF;
+}
+
+.whatsapp-link:hover {
+  color: #1a9eff;
+  text-decoration: underline;
+}
+
 .whatsapp-link:active {
-  color: #25D366;
+  color: #0066cc;
 }
 
 .footer-bottom {
