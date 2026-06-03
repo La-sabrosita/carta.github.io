@@ -258,6 +258,37 @@
       <div class="item-price">S/ 4.00</div>
     </div>
   </div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <img src="logo.png" alt="Logo La Sabrosita" class="footer-logo" />
+    </div>
+    
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p class="phone-link">
+        <a href="tel:957753669">📞 957753669</a>
+      </p>
+      <p class="phone-link">
+        <a href="tel:92738997">📞 92738997</a>
+      </p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Ubicación</h3>
+      <p>📍 En Morón, paradero Portón<br>(Frente al Grifo Primax)</p>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> La Sabrosita. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
 <script src="app.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
