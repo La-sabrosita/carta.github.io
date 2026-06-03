@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Sabrosita · Carta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo-line"><span></span><span></span></div>
+  
+    <div class="brand-container">
+      <img src="C:\Users\Andy\Downloads\logo.png" alt="Logo La Sabrosita" class="logo-img" />
+      <h1>La Sabrosita</h1>
+    </div>
+
+    <p class="tagline">Restobar · cocina de autor · cócteles artesanales</p>
+  </header>
+
+<nav>
+  <button class="nav-btn active" onclick="show('hamburguesas', this)">Hamburguesas</button>
+  <button class="nav-btn" onclick="show('alitas', this)">Alitas</button>
+  <button class="nav-btn" onclick="show('salchis', this)">Salchis</button>
+  <button class="nav-btn" onclick="show('otros', this)">Otros</button>
+  <button class="nav-btn" onclick="show('bebidas', this)">Bebidas</button>
+</nav>
+
+<div id="hamburguesas" class="section active">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Hamburguesa Clásica</div>
+        <div class="item-description">Carne artesanal + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 10.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Hamburguesa Filete</div>
+        <div class="item-description">Filete de polo + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 12.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Hamburguesa Royale</div>
+        <div class="item-description">Carne artesanal + huevo + queso + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 13.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Hamburguesa A Lo Pobre</div>
+        <div class="item-description">Carne artesanal + platano + huevo + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 13.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Hamburguesa Cheese</div>
+        <div class="item-description">Carne artesanal + doble queso + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 13.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Hamburguesa Crispy</div>
+        <div class="item-description">Pechuga Crispy + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 13.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Hamburguesa Choriburguer</div>
+        <div class="item-description">Carne artesanal + chorizo + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 15.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Hamburguesa Doble</div>
+        <div class="item-description">Doble carne artesanal + queso + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 18.00</div>
+    </div>
+  </div>
+<div id="alitas" class="section">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Acevichadas</div>
+        <div class="item-description">7 piezas de alitas + papas nativas</div>
+      </div>
+      <div class="item-price">S/ 20.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">BBQ</div>
+        <div class="item-description">7 piezas de alitas + papas nativas</div>
+      </div>
+      <div class="item-price">S/ 20.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Maracumango</div>
+        <div class="item-description">7 piezas de alitas + papas nativas</div>
+      </div>
+      <div class="item-price">S/ 20.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Bufalo</div>
+        <div class="item-description">7 piezas de alitas + papas nativas</div>
+      </div>
+      <div class="item-price">S/ 20.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Chimichurri</div>
+        <div class="item-description">7 piezas de alitas + papas nativas</div>
+      </div>
+      <div class="item-price">S/ 20.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Crispy</div>
+        <div class="item-description">7 piezas de alitas + papas nativas</div>
+      </div>
+      <div class="item-price">S/ 20.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Maracuya</div>
+        <div class="item-description">7 piezas de alitas + papas nativas</div>
+      </div>
+      <div class="item-price">S/ 20.00</div>
+    </div>
+  </div>
+<div id="salchis" class="section">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Salchipapa</div>
+        <div class="item-description">Salchicha ahumada + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 10.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Salchi Royal</div>
+        <div class="item-description">Salchicha ahumada + huevo + queso + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 13.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Salchi A Lo Pobre</div>
+        <div class="item-description">Salchica ahumada + huevo + platano + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 13.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Salchi Chorizo</div>
+        <div class="item-description">Salchicha ahumada + chorizo + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 14.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Salchi Nuggets</div>
+        <div class="item-description">Salchicha ahumada + 6 pz de nuggets + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 14.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Salchi Alita</div>
+        <div class="item-description">Salchicha ahumada + 4 piezas de alitas + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 16.00</div>
+    </div>
+  </div>
+<div id="otros" class="section">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Chicharron De Pollo</div>
+        <div class="item-description">Piezas crujientes de pollo broaster + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 18.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Pechuga A La Plancha</div>
+        <div class="item-description">Pechuga de pollo + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 18.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Pechuga Broaster</div>
+        <div class="item-description">2 piezas de pechuga crujiente + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 18.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Nuggets</div>
+        <div class="item-description">12 piezas de nuggets + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 18.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Pierna Broaster</div>
+        <div class="item-description">Pierna broaster + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 16.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Alita Broaster</div>
+        <div class="item-description">Alita broaster + papas nativas + ensalada + cremas</div>
+      </div>
+      <div class="item-price">S/ 10.00</div>
+    </div>
+  </div>
+<div id="bebidas" class="section">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Agua Mineral Personal</div>
+      </div>
+      <div class="item-price">S/ 2.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Maracuya - vaso</div>
+      </div>
+      <div class="item-price">S/ 3.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Chicha - vaso</div>
+      </div>
+      <div class="item-price">S/ 3.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Inca-Kola Personal</div>
+      </div>
+      <div class="item-price">S/ 4.00</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-name">Coca-Cola Personal</div>
+      </div>
+      <div class="item-price">S/ 4.00</div>
+    </div>
+  </div>
+<script src="C:\Users\Andy\Documents\trabajos\base de datos\app.js"></script>
+</body>
+</html>

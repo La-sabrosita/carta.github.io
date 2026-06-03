@@ -1,0 +1,90 @@
+/* --- Estilos base --- */
+*, *::before, *::after { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+/* IMPORTANTE: Evitar alturas fijas en body/html que rompen el sticky */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #000000;
+  color: #f0ebe0;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+/* --- Header --- */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #2e2a22;
+  background: #000;
+  width: 100%;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo-img { height: 80px; width: auto; }
+
+h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; }
+
+.tagline { font-size: 10px; letter-spacing: 0.25em; color: #b8965a; text-transform: uppercase; }
+
+/* --- Navegación Fija (Sticky) --- */
+nav { 
+  display: flex; 
+  justify-content: center;
+  background: #000; 
+  border-bottom: 1px solid #2e2a22; 
+  padding: 0.5rem 1rem;
+  
+  /* Propiedades para fijar el elemento */
+  position: -webkit-sticky; /* Soporte Safari */
+  position: sticky;
+  top: 0; 
+  z-index: 9999; /* Asegura que siempre esté encima de todo */
+  width: 100%;
+}
+
+.nav-btn {
+  background: none; 
+  border: none; 
+  color: #8a8070;
+  font-size: 14px; 
+  padding: 1rem; 
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-btn.active { 
+  color: #b8965a; 
+  border-bottom-color: #b8965a; 
+}
+
+/* --- Secciones --- */
+.section { 
+  display: none; 
+  padding: 2rem 1rem; 
+  max-width: 720px; 
+  margin: 0 auto; 
+}
+
+.section.active { 
+  display: block; 
+}
+
+.item {
+  display: flex; 
+  justify-content: space-between;
+  padding: 1.2rem 0; 
+  border-bottom: 1px solid #1e1c18;
+}
+
+.item-name { font-size: 18px; color: #e8e0d0; }
+.item-price { color: #b8965a; font-weight: bold; }
