@@ -12,6 +12,8 @@ body {
   color: #f0ebe0;
   min-height: 100vh;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* --- Header --- */
@@ -95,6 +97,7 @@ nav {
   max-width: 720px; 
   margin: 0 auto; 
   animation: fadeIn 0.3s ease-in;
+  flex: 1;
 }
 
 .section.active { 
@@ -139,4 +142,92 @@ nav {
   font-weight: bold; 
   margin-left: 1rem;
   white-space: nowrap;
+}
+
+/* --- Footer --- */
+footer {
+  background: #0a0a0a;
+  border-top: 1px solid #2e2a22;
+  padding: 3rem 1rem 1rem;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-section {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #b8965a;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  font-size: 13px;
+  color: #8a8070;
+  line-height: 1.8;
+}
+
+.phone-link {
+  margin: 0.5rem 0;
+}
+
+.phone-link a {
+  color: #b8965a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.phone-link a:hover {
+  color: #e8d7b7;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #2e2a22;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 12px;
+  color: #6b6355;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .nav-btn {
+    font-size: 12px;
+    padding: 0.8rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .footer-section {
+    min-width: 100%;
+  }
 }
